@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loreholt Dell</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="easter-eggs.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to Loreholt Dell</h1>
+            <p>A place where I share insights, projects, previews, and sometimes newsletters</p>
+            
+            <div class="button-container">
+                <a href="dwarves.html" class="nav-button">The Realms of the Dwarves</a>
+                <a href="greek-battle-cards.html" class="nav-button">Greek Language Battle Cards</a>
+                <a href="poems-notes.html" class="nav-button">Poems and Notes</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Easter Egg Generator - Click Dependent
+        function spawnEasterEgg() {
+            const easterEggs = [
+                { emoji: '🦅', class: 'flying-eagle' },
+                { emoji: '⛏️', class: 'dwarven-mountain' }
+            ];
+
+            const randomEgg = easterEggs[Math.floor(Math.random() * easterEggs.length)];
+            const eggElement = document.createElement('div');
+            eggElement.className = `easter-egg ${randomEgg.class}`;
+            eggElement.textContent = randomEgg.emoji;
+            
+            document.body.appendChild(eggElement);
+
+            // Remove the element after animation completes
+            setTimeout(() => {
+                eggElement.remove();
+            }, 10000);
+        }
+
+        // Spawn easter egg on click
+        document.addEventListener('click', (event) => {
+            // Don't trigger if clicking on buttons or links
+            if (event.target.tagName !== 'A' && !event.target.closest('.nav-button')) {
+                spawnEasterEgg();
+            }
+        });
+    </script>
+</body>
+</html>

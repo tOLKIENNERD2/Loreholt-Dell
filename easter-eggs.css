@@ -1,0 +1,58 @@
+/* Easter Eggs */
+.easter-egg {
+    position: fixed;
+    pointer-events: none;
+    font-size: 3em;
+    z-index: 1000;
+}
+
+.flying-eagle {
+    animation: flightPath 8s linear forwards;
+}
+
+.dwarven-mountain {
+    animation: mountainSlide 10s linear forwards;
+}
+
+@keyframes flightPath {
+    0% {
+        left: -50px;
+        top: 10%;
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    50% {
+        top: 5%;
+    }
+    100% {
+        left: calc(100vw + 50px);
+        top: 15%;
+        opacity: 1;
+    }
+}
+
+@keyframes mountainSlide {
+    0% {
+        left: -100px;
+        bottom: 10%;
+        opacity: 1;
+    }
+    100% {
+        left: calc(100vw + 100px);
+        bottom: 10%;
+        opacity: 1;
+    }
+}
+
+@keyframes mountainBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.dwarven-mountain {
+    animation: mountainSlide 10s linear forwards, mountainBounce 1s ease-in-out infinite;
+}

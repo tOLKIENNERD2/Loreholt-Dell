@@ -1,0 +1,94 @@
+.greek-cards-content {
+    max-width: 800px !important;
+}
+
+.greek-cards-content h1 {
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1.1em !important;
+    font-style: italic;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.greek-section {
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.greek-section h2 {
+    color: #667eea;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.greek-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.greek-section li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.greek-section li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-size: 1.2em;
+}
+
+.greek-section p {
+    color: #e0e0e0;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.purchase-button {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.purchase-button:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+@media (max-width: 768px) {
+    .greek-section {
+        padding: 15px;
+    }
+    
+    .greek-section h2 {
+        font-size: 1.2em;
+    }
+    
+    .intro-text {
+        font-size: 1em;
+    }
+    
+    .purchase-button {
+        padding: 12px 30px;
+        font-size: 1em;
+    }
+}

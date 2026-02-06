@@ -1,0 +1,101 @@
+.page-container {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('lore holt dell.png') center/cover no-repeat fixed;
+    padding: 40px 20px;
+    position: relative;
+}
+.poems-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('Images and books/A rich wooden background .jpg') center/cover no-repeat fixed !important;
+}
+
+.dwarves-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('Images and books/Tal-Tormind.jpeg') center/cover no-repeat fixed !important;
+}
+.back-button {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    color: white;
+    background: rgba(102, 126, 234, 0.8);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1em;
+    border: 2px solid transparent;
+}
+
+.back-button:hover {
+    background: rgba(102, 126, 234, 1);
+    transform: translateX(-5px);
+}
+
+.page-content {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 60px 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    text-align: center;
+}
+
+.page-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.page-content p {
+    font-size: 1.2em;
+    color: #ccc;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.poem {
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.poem h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+.poem p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #e0e0e0;
+    text-align: left;
+    font-family: 'Georgia', serif;
+}
+
+.dwarves-buttons {
+    margin-top: 30px;
+}
+
+.dwarves-buttons .nav-button {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        padding: 40px 20px;
+    }
+    
+    .page-content h1 {
+        font-size: 1.8em;
+    }
+    
+    .page-content p {
+        font-size: 1em;
+    }
+}
